@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biz Ofis Makinaları - Yazıcı Satış, Bakım ve Onarım</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="loader">
+        <i class="fas fa-print fa-4x"></i>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Biz Ofis Makinaları</div>
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#testimonials">Yorumlar</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-button">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero parallax" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+            <h1 data-aos="fade-up" data-aos-delay="200">Yazıcı Çözümlerinde Lider</h1>
+            <p data-aos="fade-up" data-aos-delay="300">Profesyonel yazıcı satış, bakım ve onarım hizmetleri ile işinizi kolaylaştırıyoruz.</p>
+            <a href="#contact" class="cta-button" data-aos="fade-up" data-aos-delay="400">Bize Ulaşın</a>
+        </div>
+    </section>
+
+    <section class="slider" id="products" data-aos="fade-up">
+        <h2 data-aos="fade-up">Öne Çıkan Ürünler</h2>
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="assets/images/yazici1.jpg" alt="Yazıcı 1">
+                <h3>Lazer Yazıcı</h3>
+                <p>Yüksek hızlı, profesyonel baskı.</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/yazici2.jpg" alt="Yazıcı 2">
+                <h3>Mürekkep Püskürtmeli</h3>
+                <p>Canlı renkler, ekonomik baskı.</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/yazici3.jpg" alt="Yazıcı 3">
+                <h3>Çok Fonksiyonlu</h3>
+                <p>Tarama, kopyalama ve baskı.</p>
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <section class="services" id="services" data-aos="fade-up">
+        <h2 data-aos="h3">Hizmetlerimiz</h2>
+        <div class="service-grid">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100" data-tilt>
+                <i class="fas fa-print fa-3x icon"></i>
+                <h3>Yazıcı Satış</h3>
+                <p>En yeni teknolojiye sahip yazıcılar ile iş süreçlerinizi hızlandırın.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200" data-tilt>
+                <i class="fas fa-tools fa-3x icon"></i>
+                <h3>Bakım & Onarım</h3>
+                <p>Hızlı ve güvenilir bakım hizmetleri ile yazıcılarınızı ilk günkü gibi kullanın.</p>
+            </div>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300" data-tilt>
+                <i class="fas fa-headset fa-3x icon"></i>
+                <h3>Teknik Destek</h3>
+                <p>7/24 teknik destek ekibimizle her an yanınızdayız.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" data-aos="fade-up">
+        <h2 data-aos="fade-up">Müşterilerimiz Ne Diyor?</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <p>"Biz Ofis Makinaları’nın yazıcıları işimizi uçurdu! Hızlı ve kaliteli." - Ahmet Y.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Bakım hizmetleri harika, yazıcım ilk günkü gibi!" - Ayşe K.</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Teknik destek ekibi 7/24 yanımda, süper!" - Mehmet Ç.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2 data-aos="fade-up">Bize Ulaşın</h2>
+        <form id="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+            <textarea name="message" placeholder="Mesajınız" required></textarea>
+            <button type="submit" class="cta-button">Gönder</button>
+        </form>
+    </section>
+
+    <div class="live-support">
+        <a href="https://wa.me/905551234567" target="_blank" class="support-button">📞 Canlı Destek</a>
+    </div>
+
+    <footer>
+        <p>İletişim: info@bizofismakinalari.com | Telefon: +90 533 339 67 67</p>
+        <p><a href="#home">Biz Ofis Makinaları</a> © 2025 Tüm hakları saklıdır.</p>
+    </footer>
+
+    <audio id="click-sound" src="assets/sounds/click.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.2.1/dist/vanilla-tilt.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
