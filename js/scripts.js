@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Slider functionality
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -33,13 +31,11 @@ prev.addEventListener('click', () => {
     showSlide(currentSlide);
 });
 
-// Auto-slide every 5 seconds
 setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
 }, 5000);
 
-// Testimonial slider
 const testimonialSlides = document.querySelectorAll('.testimonial-slide');
 let currentTestimonial = 0;
 
@@ -57,7 +53,6 @@ setInterval(() => {
     showTestimonial(currentTestimonial);
 }, 7000);
 
-// Contact form submission
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     playClickSound();
@@ -65,7 +60,6 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     this.reset();
 });
 
-// Theme toggle
 const themeButton = document.getElementById('theme-button');
 themeButton.addEventListener('click', () => {
     playClickSound();
@@ -74,20 +68,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
 });
 
-// Load saved theme
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
     themeButton.textContent = '☀️';
 }
 
-// Initialize AOS (Animate on Scroll)
 AOS.init({
     duration: 1200,
     easing: 'ease-in-out',
     once: true
 });
 
-// Initialize Particles.js
 particlesJS('particles-js', {
     particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -105,7 +96,6 @@ particlesJS('particles-js', {
     }
 });
 
-// Initialize Tilt.js
 VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
     max: 15,
     speed: 400,
@@ -113,7 +103,6 @@ VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
     'max-glare': 0.5
 });
 
-// Loader animation
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
     setTimeout(() => {
@@ -122,14 +111,12 @@ window.addEventListener('load', () => {
     }, 1000); // 1 saniye sonra loader kaybolur
 });
 
-// Click sound effect
 const clickSound = document.getElementById('click-sound');
 function playClickSound() {
     clickSound.currentTime = 0;
     clickSound.play();
 }
 
-// Add click sound to CTA buttons and live support
 document.querySelectorAll('.cta-button, .support-button').forEach(button => {
     button.addEventListener('click', playClickSound);
 });
